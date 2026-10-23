@@ -1,0 +1,239 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Solicitação de Infraestrutura de TI - SUTIN / UNCISAL</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+  @page {
+    size: 21.0cm 29.7cm; /* A4 */
+    margin: 2.5cm 2.5cm 2.5cm 2.5cm;
+    mso-page-orientation: portrait;
+  }
+  body {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #2D3748;
+  }
+  .header-institution {
+    text-align: center;
+    color: #1A365D;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .header-sub {
+    text-align: center;
+    color: #2B6CB0;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .header-program {
+    text-align: center;
+    color: #4A5568;
+    font-size: 9.5pt;
+    margin-bottom: 15px;
+  }
+  .divider {
+    border-bottom: 2px solid #CBD5E0;
+    margin-bottom: 20px;
+  }
+  .doc-title {
+    text-align: center;
+    color: #C53030;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  .meta-box {
+    background-color: #F7FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 25px;
+  }
+  .meta-box p {
+    margin: 4px 0;
+    font-size: 10.5pt;
+  }
+  h2 {
+    color: #1A365D;
+    font-size: 12pt;
+    border-bottom: 1.5px solid #E2E8F0;
+    padding-bottom: 4px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 6px 0;
+    text-align: justify;
+  }
+  ul {
+    margin: 6px 0 12px 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  table.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+  }
+  table.specs-table th {
+    background-color: #EDF2F7;
+    color: #2D3748;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #CBD5E0;
+    font-size: 10pt;
+  }
+  table.specs-table td {
+    padding: 8px 10px;
+    border: 1px solid #CBD5E0;
+    font-size: 10pt;
+  }
+  .signatures {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .sign-line {
+    width: 350px;
+    border-top: 1px solid #718096;
+    margin: 40px auto 8px auto;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header-institution">UNIVERSIDADE ESTADUAL DE CIÊNCIAS DA SAÚDE DE ALAGOAS — UNCISAL</div>
+  <div class="header-sub">PRÓ-REITORIA DE PESQUISA E PÓS-GRADUAÇÃO — PROPEP</div>
+  <div class="header-program">PROGRAMA INSTITUCIONAL DE BOLSAS DE INICIAÇÃO EM DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO (PIBITI / CNPq / FAPEAL)</div>
+
+  <div class="divider"></div>
+
+  <div class="doc-title">SOLICITAÇÃO DE INFRAESTRUTURA DE TI (MEMORANDO / TICKET SUTIN)</div>
+
+  <div class="meta-box">
+    <p><strong>PARA:</strong> Superintendência de Tecnologia da Informação — SUTIN / UNCISAL</p>
+    <p><strong>DE:</strong> Coordenação e Equipe do Projeto MamãeGotchi (PIBITI Edital nº 01/2026)</p>
+    <p><strong>RESPONSÁVEL:</strong> Engels Castro (engels.castro@academico.uncisal.edu.br)</p>
+    <p><strong>ASSUNTO:</strong> Solicitação de Provisionamento de Máquina Virtual (VM) para Hospedagem do Sistema "MamãeGotchi"</p>
+    <p><strong>DATA:</strong> 02 de Outubro de 2026</p>
+  </div>
+
+  <h2>1. IDENTIFICAÇÃO DO PROJETO E JUSTIFICATIVA</h2>
+  <p>
+    O <strong>MamãeGotchi</strong> é uma tecnologia educacional em saúde desenvolvida no âmbito do <strong>PIBITI / PROPEP — Edital nº 01/2026</strong>, com apoio do CNPq e FAPEAL, vinculado à Universidade Estadual de Ciências da Saúde de Alagoas (UNCISAL). Trata-se de um simulador interativo de cuidados em saúde materna (gestação e puerpério) inspirado na mecânica de animais virtuais, fundamentado nas diretrizes oficiais do Ministério da Saúde / SUS, FEBRASGO e SBP.
+  </p>
+  <p>
+    A disponibilização pública do sistema na infraestrutura de servidores da UNCISAL é etapa indispensável para:
+  </p>
+  <ul>
+    <li>Validação científica e pedagógica com discentes, gestantes e profissionais de saúde da rede pública.</li>
+    <li>Cumprimento dos produtos tecnológicos pactuados no plano de trabalho PIBITI/PROPEP.</li>
+    <li>Garantia da segurança, perenidade e confiabilidade da aplicação sob a custódia institucional da universidade.</li>
+  </ul>
+
+  <h2>2. ESCOPO ARQUITETURAL DA APLICAÇÃO (BAIXO CONSUMO)</h2>
+  <p>
+    A aplicação foi projetada com arquitetura moderna <strong>Client-Side SPA (Single Page Application)</strong> utilizando React e Vite:
+  </p>
+  <ul>
+    <li><strong>Sem Carga Contínua de Servidor:</strong> Toda a lógica de decaimento de status, sons (Web Audio API) e leitor de voz (Web Speech API) executa no navegador do cliente.</li>
+    <li><strong>Sem Necessidade de Banco de Dados Relacional:</strong> Não requer instâncias de PostgreSQL, MySQL ou SQL Server nesta fase.</li>
+    <li><strong>Container Ultra-Leve:</strong> O sistema já está encapsulado em imagem Docker com servidor Nginx Alpine de apenas <strong>~25 MB</strong>, gerando consumo real de memória inferior a 50 MB em execução.</li>
+  </ul>
+
+  <h2>3. ESPECIFICAÇÕES TÉCNICAS DA MÁQUINA VIRTUAL SOLICITADA</h2>
+  <p>
+    Solicitamos à SUTIN o provisionamento de uma Máquina Virtual (VM) em ambiente de virtualização institucional (Proxmox, VMware ou Hyper-V), com o seguinte dimensionamento enxuto:
+  </p>
+
+  <table class="specs-table">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Parâmetro</th>
+        <th style="width: 35%;">Especificação Solicitada</th>
+        <th style="width: 40%;">Justificativa Técnica</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sistema Operacional</strong></td>
+        <td>Linux Ubuntu Server 22.04 LTS ou Debian 12 (64-bit)</td>
+        <td>Padrão estável para execução de containers Docker e Nginx</td>
+      </tr>
+      <tr>
+        <td><strong>Processador (vCPU)</strong></td>
+        <td>2 vCPUs</td>
+        <td>Suficiente para atender requisições web estáticas concorrentes</td>
+      </tr>
+      <tr>
+        <td><strong>Memória RAM</strong></td>
+        <td>2 GB a 4 GB</td>
+        <td>Margem confortável para o SO e o container (~50MB de uso real)</td>
+      </tr>
+      <tr>
+        <td><strong>Armazenamento</strong></td>
+        <td>20 GB a 30 GB (Thin Provisioning)</td>
+        <td>Sistema operacional, logs do Nginx e imagens Docker</td>
+      </tr>
+      <tr>
+        <td><strong>Ambiente Pré-instalado</strong></td>
+        <td>Docker Engine + Docker Compose</td>
+        <td>Facilidade de deploy, isolamento e atualizações contínuas</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. REQUISITOS DE REDE, PORTAS E DOMÍNIO</h2>
+  <ul>
+    <li><strong>Portas de Entrada Liberadas (Firewall UNCISAL):</strong> Porta 22 (SSH) para administração (ou via VPN interna da universidade); Porta 80 (HTTP) e Porta 443 (HTTPS) liberadas para acesso dos usuários.</li>
+    <li><strong>Configuração de Domínio / DNS:</strong> O solicitante <strong>já possui a titularidade do domínio</strong> destinado à aplicação. Solicita-se à SUTIN o IP público fixo da VM (ou IP do Proxy Reverso/WAF institucional) para apontamento do registro DNS (Registro tipo A ou CNAME), ou realização do roteamento pelo proxy reverso existente.</li>
+    <li><strong>Certificado Digital SSL/TLS (HTTPS):</strong> Necessário para conformidade com a LGPD e para autorização dos recursos de áudio e síntese de voz dos navegadores. Pode ser utilizado o certificado Wildcard da UNCISAL ou emissão automatizada via Let's Encrypt / Certbot.</li>
+  </ul>
+
+  <h2>5. PROCEDIMENTO DE IMPLANTAÇÃO E DEPLOY</h2>
+  <p>
+    A equipe do projeto já dispõe dos arquivos de automação para deploy imediato assim que a VM for liberada:
+  </p>
+  <ul>
+    <li><code>Dockerfile</code> multi-stage otimizado.</li>
+    <li><code>docker-compose.yml</code> padronizado.</li>
+    <li><code>nginx.conf</code> com compressão Gzip e headers de segurança (<code>X-Frame-Options</code>, <code>X-Content-Type-Options</code>, <code>Content-Security-Policy</code>).</li>
+  </ul>
+  <p>
+    O deploy pode ser executado em menos de 10 minutos pela equipe do projeto via SSH ou pelo analista responsável da SUTIN.
+  </p>
+
+  <h2>6. RESPONSÁVEIS PELO CHAMADO E CONTATOS</h2>
+  <p><strong>Responsável Técnico / Desenvolvedor:</strong> Engels Castro</p>
+  <p><strong>E-mail Institucional:</strong> engels.castro@academico.uncisal.edu.br</p>
+  <p><strong>Vínculo:</strong> Projeto PIBITI / PROPEP — UNCISAL (Edital 01/2026)</p>
+
+  <p>
+    Colocamo-nos à inteira disposição da SUTIN para reuniões de alinhamento técnico, esclarecimento de dúvidas ou homologação conjunta da VM.
+  </p>
+
+  <div class="signatures">
+    <p>Maceió - AL, 02 de Outubro de 2026.</p>
+    <div class="sign-line"></div>
+    <p><strong>Equipe do Projeto MamãeGotchi</strong><br>
+    Iniciação em Desenvolvimento Tecnológico e Inovação — PIBITI / PROPEP<br>
+    Universidade Estadual de Ciências da Saúde de Alagoas — UNCISAL</p>
+  </div>
+
+</body>
+</html>

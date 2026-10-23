@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-brand: 'Pacifico', cursive;
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-cute: 'Fredoka', cursive, sans-serif;
+}
+
+@layer utilities {
+  .brand-font {
+    font-family: 'Pacifico', cursive;
+  }
+  .display-font {
+    font-family: 'Outfit', sans-serif;
+  }
+  .cute-font {
+    font-family: 'Fredoka', cursive, sans-serif;
+  }
+}
+
+/* =========================================================================
+   ACCESSIBILITY & INCLUSION MODES
+   ========================================================================= */
+
+/* 1. Font Size Scaling */
+.font-size-normal {
+  font-size: 16px;
+}
+
+.font-size-large {
+  font-size: 18px;
+}
+.font-size-large h1 { font-size: 1.85rem !important; }
+.font-size-large h2 { font-size: 1.5rem !important; }
+.font-size-large h3 { font-size: 1.3rem !important; }
+.font-size-large p, .font-size-large span, .font-size-large button { font-size: 1.05rem; }
+
+.font-size-extra-large {
+  font-size: 20px;
+}
+.font-size-extra-large h1 { font-size: 2.1rem !important; }
+.font-size-extra-large h2 { font-size: 1.75rem !important; }
+.font-size-extra-large h3 { font-size: 1.5rem !important; }
+.font-size-extra-large p, .font-size-extra-large span, .font-size-extra-large button { font-size: 1.2rem; }
+
+/* 2. High Contrast Theme (WCAG AAA Compliance) */
+.theme-high-contrast {
+  background-color: #09090b !important;
+  color: #ffffff !important;
+}
+
+.theme-high-contrast header,
+.theme-high-contrast div[id$="-container"],
+.theme-high-contrast .bg-white,
+.theme-high-contrast .bg-slate-50,
+.theme-high-contrast .bg-rose-50 {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+  border-color: #facc15 !important; /* High contrast vibrant yellow borders */
+  border-width: 2px !important;
+}
+
+.theme-high-contrast p,
+.theme-high-contrast span:not(.font-bold) {
+  color: #f4f4f5 !important;
+}
+
+.theme-high-contrast button {
+  border-color: #ffffff !important;
+  border-width: 2px !important;
+  font-weight: 800 !important;
+}
+
+.theme-high-contrast button:focus-visible {
+  outline: 4px solid #facc15 !important;
+  outline-offset: 3px !important;
+}
+
+/* 3. Daltonism Filters / Colorblind assistance */
+.theme-protanopia {
+  filter: url('#protanopia-filter');
+}
+
+.theme-deuteranopia {
+  filter: url('#deuteranopia-filter');
+}
+
+.theme-tritanopia {
+  filter: url('#tritanopia-filter');
+}
+
+.theme-monochrome {
+  filter: grayscale(100%) contrast(120%);
+}
+
+/* 4. Reduced Motion */
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Accessible focus ring across whole app */
+:focus-visible {
+  outline: 3px solid #e11d48;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(244, 114, 182, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 114, 182, 0.5);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MamãeGotchi",
+  "description": "Simulador educacional de gestação e puerpério inspirado em Tamagotchi, ensinando cuidados de saúde e desenvolvimento fetal de forma lúdica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
